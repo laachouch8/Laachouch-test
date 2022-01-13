@@ -1484,6 +1484,9 @@ ul {
     line-height: 1.7;
     flex: 1;
 }
+.footer .box .line .info span {
+    display: block;
+}
 .footer .footer-gallery img{
     width: 78px;
     border: 3px solid white;
