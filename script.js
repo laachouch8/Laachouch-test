@@ -50,4 +50,11 @@ let counter = setInterval(() => {
     }
 }, 1000);
 
+let nav = document.querySelector(".main-nav .otherLinks");
+let megaMenu = document.querySelector(".main-nav .mega-menu");
+let list = document.querySelectorAll(".main-nav .mega-menu li");
+
+nav.onclick = function () {
+    megaMenu.classList.toggle("open");
+}
 
