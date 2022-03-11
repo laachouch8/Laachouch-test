@@ -1508,6 +1508,27 @@ ul {
   border-top: 1px solid #444;
 }
 /* End Footer */
+/* Start Scroll to Up */
+.up {
+  position: fixed;
+  color: var(--sectio-background);
+  background-color: var(--main-color);
+  padding: 2px 8px;
+  font-size: 20px;
+  bottom: 15px;
+  right: -39px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: var(--main-transition);
+  z-index: 90;
+}
+.up:hover {
+  background-color: var(--main-color-alt);
+}
+.up.show {
+  right: 10px;
+}
+/* End Scroll to Up */
 /* Start animation */
 @keyframes up-and-down {
   0%,

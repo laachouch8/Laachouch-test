@@ -16,6 +16,10 @@ window.onscroll = function () {
             nums.forEach((num) => startCount(num));
         }
         started = true;
+    } else if (window.scrollY >= 650) {
+        up.classList.add("show");
+    } else {
+        up.classList.remove("show");
     }
 }
 
@@ -56,5 +60,14 @@ let list = document.querySelectorAll(".main-nav .mega-menu li");
 
 nav.onclick = function () {
     megaMenu.classList.toggle("open");
+}
+
+let up = document.querySelector(".up");
+
+up.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
 }
 
